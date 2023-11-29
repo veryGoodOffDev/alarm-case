@@ -1,0 +1,47 @@
+@import './variables.scss';
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    src: local('Manrope'), url('../../assets/fonts/Manrope-Medium.ttf');
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: var(--main-color);
+  font-family: 'Manrope', 'sans-serif';
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  font-family: 'Manrope', 'sans-serif';
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+}
+
+#root::-webkit-scrollbar {
+  width: 5px;
+  background-color: aqua;
+}
+#root::-webkit-scrollbar-thumb {
+ border-radius: 30%;
+ background-color: azure;
+}

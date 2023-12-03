@@ -1,0 +1,7 @@
+export const ADMIN_ROUTE = '/admin'
+export const LOGIN_ROUTE = '/login'
+export const REGISTRATION_ROUTE = '/registration'
+export const LK_ROUTE = '/lk'
+export const CASE_ROUTE = '/mycase'
+export const SETTING_ROUTE = '/setting'
+export const MAIN_ROUTE = '/'

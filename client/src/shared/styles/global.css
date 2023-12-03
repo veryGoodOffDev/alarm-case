@@ -6,11 +6,16 @@
 }
 html,
 body {
-  width: 100%;
+  max-width: 390px;
   height: 100%;
+  margin: 0 auto;
   color: var(--main-color);
   font-family: 'Manrope', 'sans-serif';
   scroll-behavior: smooth;
+}
+
+body.dark-theme {
+  color: aliceblue;
 }
 
 #root {

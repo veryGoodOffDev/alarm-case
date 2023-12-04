@@ -22,7 +22,7 @@ export const CasesList = () => {
         className="mySwiper"
       >
         {user.cases.map((bag) => {
-            return <SwiperSlide><Case key={bag.id} bag={bag} /></SwiperSlide>
+            return <SwiperSlide key={bag.id}><Case bag={bag} /></SwiperSlide>
         })}
     </Swiper>
     </div>

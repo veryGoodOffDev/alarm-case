@@ -32,8 +32,9 @@
 
 h1 {
     max-width: 250px;
-    font-size: 34px;
+    font-size: 28px;
     padding: 8px;
+    font-weight: normal;
 }
 
 .case__body {

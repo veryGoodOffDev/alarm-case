@@ -193,11 +193,12 @@ export default class UserStore {
     ];
 
     this._categories = [
-      { id: 1, name: "Продукты", icon: "src" },
-      { id: 2, name: "Связь", icon: "src" },
-      { id: 3, name: "Гигиена", icon: "src" },
-      { id: 4, name: "Разведение огня", icon: "src" },
+      { id: 1, name: "Продукты", icon: "src", items:[],},
+      { id: 2, name: "Связь", icon: "src", items:[], },
+      { id: 3, name: "Гигиена", icon: "src", items:[], },
+      { id: 4, name: "Разведение огня", icon: "src", items:[], },
     ];
+
     makeAutoObservable(this);
   }
 

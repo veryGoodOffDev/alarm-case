@@ -1,0 +1,35 @@
+.container {
+    background-color: #D6E4E6;
+    height: 100%;
+}
+
+.menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #005760;
+
+}
+
+.back {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 87, 96, 0.08);
+        border-radius: 50%;
+        cursor: pointer;
+        background-image: url(../assets/img/back-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+.share {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 87, 96, 0.08);
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(../assets/img/share.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

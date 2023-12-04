@@ -1,28 +1,29 @@
 import React from "react";
 import "./index.css";
-import myCase from "./../../assets/img/azure-case.png";
+import grayBackpack from "./../../assets/img/gray-case.png";
 import { ProgressBar } from "../../common/ui/ProgressBar/ProgressBar";
 import { CASE_ROUTE } from "../../utils/consts";
 import { NavLink } from "react-router-dom";
 
 export const Case = ({bag}) => {
-  console.log(bag.name, 'myCase')
+  const addedProducts = bag.products.filter((prod) => prod.isAdded)
+  const progressPercent = Math.floor((addedProducts.length / bag.products.length) * 100)
   return (
     <div className="case">
       <div className="case__header">
-        <h1>Мой рюкзак</h1>
+        <h1>{bag.name}</h1>
         <nav className="case__menu"></nav>
       </div>
       <div className="case__body">
         <NavLink to={CASE_ROUTE + "/" + bag.id} className="card__image">
-          <img src={myCase} alt="" width={326} height={326} />
+          <img src={grayBackpack} alt="" width={326} height={326} />
         </NavLink>
       </div>
       <div className="case__footer">
         <div className="progress__info">
           <div className="info">
-            <p className="info__percentage">79%</p>{" "}
-            <p className="info__quantity">21/25</p>
+            <p className="info__percentage">{progressPercent}%</p>{" "}
+            <p className="info__quantity">{addedProducts.length}/{bag.products.length}</p>
           </div>
           <div className="notify">
             <span className="notify--warning">1</span>
@@ -30,7 +31,7 @@ export const Case = ({bag}) => {
           </div>
         </div>
         <div className="progress__bar">
-          <ProgressBar />
+          <ProgressBar progressPercent={progressPercent} />
         </div>
       </div>
     </div>

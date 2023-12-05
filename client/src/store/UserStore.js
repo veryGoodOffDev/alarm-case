@@ -1,4 +1,8 @@
 import { makeAutoObservable } from "mobx";
+import productsIcon from '../assets/icons/products-icon.svg'
+import connectionIcon from '../assets/icons/connection-icon.svg'
+import forKidsIcon from '../assets/icons/for-kids-icon.svg'
+import clothesIcon from '../assets/icons/clothes-icon.svg'
 
 export default class UserStore {
   constructor() {
@@ -22,6 +26,7 @@ export default class UserStore {
         name: "Мой рюкзак",
         products: [
           {
+            id:1,
             categoryId: 1,
             quantity: 2,
             name: "Лапша",
@@ -30,6 +35,7 @@ export default class UserStore {
             isAdded: false,
           },
           {
+            id:2,
             categoryId: 1,
             quantity: 3,
             name: "Тушенка",
@@ -38,6 +44,7 @@ export default class UserStore {
             isAdded: false,
           },
           {
+            id:3,
             categoryId: 1,
             quantity: 2,
             name: "Сухари",
@@ -46,6 +53,7 @@ export default class UserStore {
             isAdded: true,
           },
           {
+            id:4,
             categoryId: 1,
             quantity: 3,
             name: "Вода",
@@ -54,6 +62,7 @@ export default class UserStore {
             isAdded: false,
           },
           {
+            id:5,
             categoryId: 1,
             quantity: 2,
             name: "Йогурт",
@@ -62,6 +71,7 @@ export default class UserStore {
             isAdded: true,
           },
           {
+            id:6,
             categoryId: 2,
             quantity: 1,
             name: "Фонарик",
@@ -70,6 +80,7 @@ export default class UserStore {
             isAdded: false,
           },
           {
+            id:7,
             categoryId: 2,
             quantity: 1,
             name: "Радио",
@@ -78,6 +89,7 @@ export default class UserStore {
             isAdded: true,
           },
           {
+            id:8,
             categoryId: 2,
             quantity: 1,
             name: "Рация",
@@ -86,6 +98,7 @@ export default class UserStore {
             isAdded: false,
           },
           {
+            id:9,
             categoryId: 3,
             quantity: 2,
             name: "Мыло",
@@ -94,6 +107,7 @@ export default class UserStore {
             isAdded: false,
           },
           {
+            id:10,
             categoryId: 3,
             quantity: 2,
             name: "Зубная паста",
@@ -102,6 +116,7 @@ export default class UserStore {
             isAdded: false,
           },
           {
+            id:11,
             categoryId: 3,
             quantity: 6,
             name: "Туалетная бумага",
@@ -110,17 +125,19 @@ export default class UserStore {
             isAdded: false,
           },
           {
+            id:12,
             categoryId: 4,
             quantity: 4,
-            name: "Спички",
+            name: "Памперс",
             height: "200g",
             expiration: "20.04.2024",
             isAdded: false,
           },
           {
+            id:13,
             categoryId: 4,
             quantity: 4,
-            name: "Сухое горючее",
+            name: "Пеленки",
             height: "200g",
             expiration: "20.04.2024",
             isAdded: false,
@@ -133,22 +150,25 @@ export default class UserStore {
         name: "Еще один рюкзак",
         products: [
           {
+            id:1,
             categoryId: 1,
             quantity: 2,
             name: "Лапша",
             height: "200g",
             expiration: "20.04.2024",
-            isAdded: false,
+            isAdded: true,
           },
           {
+            id:2,
             categoryId: 1,
             quantity: 3,
             name: "Тушенка",
             height: "200g",
             expiration: "20.04.2024",
-            isAdded: false,
+            isAdded: true,
           },
           {
+            id:3,
             categoryId: 1,
             quantity: 2,
             name: "Сухари",
@@ -157,14 +177,16 @@ export default class UserStore {
             isAdded: true,
           },
           {
+            id:4,
             categoryId: 1,
             quantity: 3,
             name: "Вода",
             height: "5L",
             expiration: "20.04.2024",
-            isAdded: false,
+            isAdded: true,
           },
           {
+            id:5,
             categoryId: 1,
             quantity: 2,
             name: "Йогурт",
@@ -173,14 +195,16 @@ export default class UserStore {
             isAdded: true,
           },
           {
+            id:6,
             categoryId: 2,
             quantity: 1,
             name: "Фонарик",
             height: "200g",
             expiration: "20.04.2024",
-            isAdded: false,
+            isAdded: true,
           },
           {
+            id:7,
             categoryId: 2,
             quantity: 1,
             name: "Радио",
@@ -193,10 +217,10 @@ export default class UserStore {
     ];
 
     this._categories = [
-      { id: 1, name: "Продукты", icon: "src", items:[],},
-      { id: 2, name: "Связь", icon: "src", items:[], },
-      { id: 3, name: "Гигиена", icon: "src", items:[], },
-      { id: 4, name: "Разведение огня", icon: "src", items:[], },
+      { id: 1, name: "Продукты", icon: productsIcon,},
+      { id: 2, name: "Связь", icon: connectionIcon,},
+      { id: 3, name: "Одежда", icon: clothesIcon,},
+      { id: 4, name: "Для детей", icon: forKidsIcon,},
     ];
 
     makeAutoObservable(this);

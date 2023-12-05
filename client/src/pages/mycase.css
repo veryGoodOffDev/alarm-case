@@ -1,6 +1,6 @@
 .container {
     background-color: #D6E4E6;
-    height: 100%;
+    padding-bottom: 20px;
 }
 
 .menu__container {
@@ -18,7 +18,7 @@
         background-color: rgba(0, 87, 96, 0.08);
         border-radius: 50%;
         cursor: pointer;
-        background-image: url(../assets/img/back-arrow.svg);
+        background-image: url(../assets/icons/back-arrow.svg);
         background-repeat: no-repeat;
         background-position: center;
 }
@@ -29,7 +29,7 @@
     background-color: rgba(0, 87, 96, 0.08);
     border-radius: 50%;
     cursor: pointer;
-    background-image: url(../assets/img/share.svg);
+    background-image: url(../assets/icons/share.svg);
     background-repeat: no-repeat;
     background-position: center;
 }

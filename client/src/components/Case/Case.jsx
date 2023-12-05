@@ -5,9 +5,11 @@ import { ProgressBar } from "../../common/ui/ProgressBar/ProgressBar";
 import { CASE_ROUTE } from "../../utils/consts";
 import { NavLink } from "react-router-dom";
 
-export const Case = ({bag}) => {
-  const addedProducts = bag.products.filter((prod) => prod.isAdded)
-  const progressPercent = Math.floor((addedProducts.length / bag.products.length) * 100)
+export const Case = ({ bag }) => {
+  const addedProducts = bag.products.filter((prod) => prod.isAdded);
+  const progressPercent = Math.floor(
+    (addedProducts.length / bag.products.length) * 100
+  );
   return (
     <div className="case">
       <div className="case__header">
@@ -23,7 +25,9 @@ export const Case = ({bag}) => {
         <div className="progress__info">
           <div className="info">
             <p className="info__percentage">{progressPercent}%</p>{" "}
-            <p className="info__quantity">{addedProducts.length}/{bag.products.length}</p>
+            <p className="info__quantity">
+              {addedProducts.length}/{bag.products.length}
+            </p>
           </div>
           <div className="notify">
             <span className="notify--warning">1</span>
@@ -31,7 +35,14 @@ export const Case = ({bag}) => {
           </div>
         </div>
         <div className="progress__bar">
-          <ProgressBar progressPercent={progressPercent} />
+          <ProgressBar
+            progressPercent={progressPercent}
+            height={"80"}
+            radius={'12px'}
+            progressBarColor={"rgba(255, 255, 255, 0.10"}
+            startBarColor={'rgba(255, 255, 255, 0.8)'}
+            endBarColor={'#C2FF15'}
+          />
         </div>
       </div>
     </div>

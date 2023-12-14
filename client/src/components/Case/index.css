@@ -68,6 +68,7 @@ h1 {
     font-size: 10px;
     display: flex;
     gap: 8px;
+    color: #fff;
 }
 
 .notify--warning {

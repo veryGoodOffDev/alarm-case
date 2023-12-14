@@ -9,7 +9,7 @@ import { Context } from '../..'
 
 export const AppRouter = () => {
   const {user} = useContext(Context)
-  console.log(user.isAuth)
+  // console.log(user.isAuth)
   return (
     <Routes>
           <Route path={ADMIN_ROUTE} element={<AdminPage />} />

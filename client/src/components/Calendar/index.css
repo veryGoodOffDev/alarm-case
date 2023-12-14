@@ -1,0 +1,4 @@
+.expiration__input {
+    color: var(--40, rgba(0, 0, 0, 0.40));
+    font-size: 22px;
+}

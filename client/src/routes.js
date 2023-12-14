@@ -25,7 +25,7 @@ export const publicRoutes = [
         component: MainPage,
     },
     {
-        path: CASE_ROUTE + '/id',
+        path: CASE_ROUTE,
         component: MyCase,
     },
     {

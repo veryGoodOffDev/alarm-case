@@ -22,7 +22,7 @@ export default class UserStore {
     this._cases = [
       {
         userId: 1,
-        id: 1,
+        id: "1",
         name: "Мой рюкзак",
         products: [
           {
@@ -146,7 +146,7 @@ export default class UserStore {
       },
       {
         userId: 1,
-        id: 2,
+        id: "2",
         name: "Еще один рюкзак",
         products: [
           {
@@ -216,6 +216,8 @@ export default class UserStore {
       },
     ];
 
+    this._selectedCase = {}
+
     this._categories = [
       { id: 1, name: "Продукты", icon: productsIcon,},
       { id: 2, name: "Связь", icon: connectionIcon,},
@@ -224,6 +226,10 @@ export default class UserStore {
     ];
 
     makeAutoObservable(this);
+  }
+
+  setSelectedCase(selectedCase) {
+    this._selectedCase = selectedCase
   }
 
   setIsAuth(bool) {
@@ -239,6 +245,10 @@ export default class UserStore {
 
   setCategories(categories) {
     this._categories = categories;
+  }
+
+  get selectedCase() {
+    return this._selectedCase
   }
 
   get isAuth() {

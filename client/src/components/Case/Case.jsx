@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import "./index.css";
 import grayBackpack from "./../../assets/img/gray-case.png";
 import { ProgressBar } from "../../common/ui/ProgressBar/ProgressBar";
 import { CASE_ROUTE } from "../../utils/consts";
 import { NavLink } from "react-router-dom";
+import { Context } from "../..";
 
 export const Case = ({ bag }) => {
+  const {user} = useContext(Context)
   const addedProducts = bag.products.filter((prod) => prod.isAdded);
   const progressPercent = Math.floor(
     (addedProducts.length / bag.products.length) * 100
   );
+  console.log(user.cases, 'console fron CASE')
+  useEffect(() => {
+    console.log('кку')
+  }, [])
   return (
     <div className="case">
       <div className="case__header">

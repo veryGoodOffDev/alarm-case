@@ -13,6 +13,7 @@ export const ProductItem = observer(
     quanProd,
     categoryId,
   }) => {
+    // console.log(expiration)
     return (
       <div className="product__item">
         <div className="input__container">

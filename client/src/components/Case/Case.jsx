@@ -12,10 +12,7 @@ export const Case = ({ bag }) => {
   const progressPercent = Math.floor(
     (addedProducts.length / bag.products.length) * 100
   );
-  console.log(user.cases, 'console fron CASE')
-  useEffect(() => {
-    console.log('кку')
-  }, [])
+
   return (
     <div className="case">
       <div className="case__header">

@@ -12,7 +12,7 @@ import { observer } from 'mobx-react-lite';
 
 export const CasesList = observer( ({isLoading}) => {
     const {user} = useContext(Context)
-    console.log(user.cases, 'данные в кейсах')
+    // console.log(user.cases, 'данные в кейсах')
   return (
     <>
     <div>

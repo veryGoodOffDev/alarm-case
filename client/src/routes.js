@@ -4,7 +4,7 @@ import { LkPage } from "./pages/LkPage"
 import { MainPage } from "./pages/MainPage"
 import { MyCase } from "./pages/MyCase"
 import { SettingPage } from "./pages/SettingPage"
-import { ADMIN_ROUTE, LK_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, CASE_ROUTE, SETTING_ROUTE, MAIN_ROUTE } from "./utils/consts"
+import { ADMIN_ROUTE, LK_ROUTE, LOGIN_ROUTE, REGISTRATION_ROUTE, CASE_ROUTE, SETTINGS_ROUTE, MAIN_ROUTE } from "./utils/consts"
 export const authRoutes = [
     {
         path: ADMIN_ROUTE,
@@ -15,7 +15,7 @@ export const authRoutes = [
         component: LkPage,
     },
     {
-        path: SETTING_ROUTE,
+        path: SETTINGS_ROUTE,
         component: SettingPage,
     },
 ]

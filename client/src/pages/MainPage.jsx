@@ -7,8 +7,7 @@ import { observer } from 'mobx-react-lite';
 export const MainPage = observer(() => {
     const {user} = useContext(Context)
     const [isLoading, setIsLoading] = useState(false)
-    console.log(user.user)
-    console.log(user.cases, 'данные с апи')
+
 
       // useEffect(() => {                  
       //   try {

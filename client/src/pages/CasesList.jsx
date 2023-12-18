@@ -14,6 +14,7 @@ export const CasesList = observer( ({isLoading}) => {
     const {user} = useContext(Context)
     console.log(user.cases, 'данные в кейсах')
   return (
+    <>
     <div>
       {isLoading ? <h2>Загрузка</h2>  :  <Swiper
         spaceBetween={30}
@@ -29,7 +30,8 @@ export const CasesList = observer( ({isLoading}) => {
             return <SwiperSlide key={bag.id}><Case bag={bag} /></SwiperSlide>
         })}
     </Swiper> }
-
     </div>
+    <button className='create__button'>+</button>
+    </>
   )
 })

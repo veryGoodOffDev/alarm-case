@@ -24,7 +24,7 @@ export const Case = ({ bag }) => {
       </div>
       <div className="case__body">
         <NavLink to={CASE_ROUTE + "/" + bag.id} className="card__image">
-          <img src={grayBackpack} alt="" width={326} height={326} />
+          <img src={grayBackpack} alt="" width={280} height={280} />
         </NavLink>
       </div>
       <div className="case__footer">

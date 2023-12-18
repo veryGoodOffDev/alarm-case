@@ -7,7 +7,7 @@
     border-top:  solid var(--10, rgba(0, 0, 0, 0.10));
 }
 
-.input__container label {
+.input__container>label {
   display: flex;
   align-items: center;
   cursor: pointer;

@@ -1,0 +1,16 @@
+.navigation {
+    position: fixed;
+    height: 80px;
+    background: linear-gradient(0deg, rgba(0, 87, 96, 0.08) 0%, rgba(0, 87, 96, 0.08) 100%), #D6E4E6;
+    bottom: 0;
+    display: flex;
+    flex: 1;
+    width: 350px;
+    left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+}

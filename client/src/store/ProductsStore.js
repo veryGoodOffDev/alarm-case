@@ -3,13 +3,15 @@ import { makeAutoObservable } from "mobx";
 export default class ProductsStore {
   constructor() {
     this._types = [
-      {
-        id: 1, name: 'Продукты',
-        id: 2, name: 'Лекарства',
-        id: 3, name: 'Одежда',
-        id: 4, name: 'Электроника',
-      },
     ];
+    this._quantityTypes = [
+      {id:1, name:"Шт"},
+      {id:2, name:"Мг"},
+      {id:3, name:"Гр"},
+      {id:4, name:"Л"},
+      {id:5, name:"Мл"},
+      {id:6, name:"Кл"},
+    ]
     this._user = {};
     makeAutoObservable(this);
   }
@@ -17,6 +19,9 @@ export default class ProductsStore {
   setTypes (types) {
     this._types = types
 }
+  setQuantityTypes (quantityTypes) {
+    this._quantityTypes = quantityTypes
+  }
 
   setIsAuth(bool) {
     this._isAuth = bool;
@@ -30,5 +35,9 @@ export default class ProductsStore {
   }
   get user() {
     return this._user;
+  }
+
+  get quantityTypes() {
+    return this._quantityTypes
   }
 }

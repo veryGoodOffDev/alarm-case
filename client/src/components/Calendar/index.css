@@ -1,4 +1,13 @@
 .expiration__input {
-    color: var(--40, rgba(0, 0, 0, 0.40));
+    /* color: var(--40, rgba(0, 0, 0, 0.40)); */
     font-size: 22px;
 }
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    margin-right: 10px;
+}
+
+/* input[type="date"]::-webkit-calendar-picker-indicator{
+	background:url("../../assets/icons/calendar-icon.svg");
+} */
+

@@ -8,6 +8,7 @@ ul {
     background-color: #fff;
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
 }
 .collapse__container h2 {
     font-size: 18px;
@@ -37,4 +38,33 @@ ul {
 
 .product__list {
     overflow: hidden;
+}
+
+.product__list {
+    transition: ease 0.3s;
+    /* transform: rotateX(90deg); */
+    height: 0px;
+}
+
+/* .open {
+    height: auto;
+} */
+
+
+.show {
+    display: block;
+}
+
+.collapse__input:checked ~ .product__list {
+    transition: all 0.3s;
+    transform: rotateX(0);
+    height: auto;
+}
+.collapse__input {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
 }

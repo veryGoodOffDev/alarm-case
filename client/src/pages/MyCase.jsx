@@ -15,14 +15,14 @@ export const MyCase = observer(() => {
 
   console.log(user.selectedCase, 'выбранный кейс')
 
-  const currentBag = user.cases.filter((bag) => bag.id === id)[0].name
-  console.log(currentBag)
+  // const currentBag = user.cases.filter((bag) => bag.id === id)[0].name
+  // console.log(currentBag)
 
   return (
     <div className='container'>
       <nav className='menu__container'>
         <div className='back' onClick={()=>goBack()}></div>
-        <h2>{currentBag}</h2>
+        {/* <h2>{currentBag}</h2> */}
         <div className='share'></div>
       </nav>
       <CategoriesList backpackId={id}/>

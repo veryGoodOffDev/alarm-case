@@ -52,3 +52,17 @@ a:hover {
  border-radius: 30%;
  background-color: azure;
 }
+
+.create__button {
+  padding: 24px;
+  background: var(--80, rgba(0, 0, 0, 0.80));
+  color: #fff;
+  border-radius: 40px;
+  font-size: 22px;
+  text-align: center;
+  margin: 18px 0 0;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 75px;
+}

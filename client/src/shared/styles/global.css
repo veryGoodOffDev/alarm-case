@@ -66,3 +66,19 @@ a:hover {
   box-sizing: border-box;
   margin-bottom: 75px;
 }
+
+.error {
+  background-color: #F22525;
+  color: #fff;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.danger {
+  background-color: #F08624;
+  color: #fff;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 4px;
+}

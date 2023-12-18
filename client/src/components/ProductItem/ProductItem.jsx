@@ -21,9 +21,25 @@ export const ProductItem = observer(
     const handleChange =({target}) => {
       console.log(target.id)
       user.setCheckbox(target.id, backpackId)
-
     }
+
     // console.log(expiration)
+    const newDate = expiration?.split(".").reverse().join('.')
+    // console.log(newDate)
+    // const dateFirst = new Date(newDate)
+    const dateSecond = new Date(newDate)
+    const timeDiff = Math.abs(dateSecond.getTime() - Date.now());
+    const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+    // console.log(diffDays)
+
+    const changeClass =() => {
+      if(diffDays <= 90 && diffDays > 30) {
+        return "product__expiration danger"
+      } else if(diffDays <= 30) {
+        return "product__expiration error"
+      }
+    }
+    
     return (
       <div className="product__item">
         <div className="input__container">
@@ -42,7 +58,7 @@ export const ProductItem = observer(
         </div>
         <div className="product__info">
           <span className="product__quantity">{quantity} {quantityType}</span>
-          <span className="product__expiration">{expiration}</span>
+          <span className={changeClass()}>{expiration}</span>
         </div>
       </div>
     );

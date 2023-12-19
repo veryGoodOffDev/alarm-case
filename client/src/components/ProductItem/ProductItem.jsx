@@ -33,9 +33,9 @@ export const ProductItem = observer(
     // console.log(diffDays)
 
     const changeClass =() => {
-      if(diffDays <= 90 && diffDays > 30) {
+      if(diffDays <= 30) {
         return "product__expiration danger"
-      } else if(diffDays <= 30) {
+      } else if(diffDays <= 0) {
         return "product__expiration error"
       }
     }

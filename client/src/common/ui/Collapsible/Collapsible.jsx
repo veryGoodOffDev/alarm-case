@@ -1,8 +1,7 @@
-import React, { useContext, useState, useRef } from "react";
+import React, { useContext, useState, useRef, useEffect } from "react";
 import { ProgressBar } from "../ProgressBar/ProgressBar";
 import { ProductItem } from "../../../components/ProductItem/ProductItem";
 import { Context } from "../../..";
-import { observable } from "mobx";
 import { observer } from "mobx-react-lite";
 
 const Collapsible = observer(
@@ -18,44 +17,20 @@ const Collapsible = observer(
   }) => {
     const { user } = useContext(Context);
     const [openModal, setOpenModal] = useState(false);
-    const [checked, setChecked] = useState(false);
-    const [openId, setOpenId] = useState(null);
     const [isOpened, setIsOpened] = useState(false);
     const parentRef = useRef();
-    if (parentRef.current) console.log(parentRef);
 
-    const clickHandler = (event, id) => {
-      console.log(event.target.className);
-      if (id === openId) {
-        setOpenId(null);
-        setIsOpened(false);
-      } else {
-        setOpenId(id);
-        setIsOpened(true);
-      }
-    };
-
-    // console.log(currentCase, 'currentCase')
+    // const[newHeight, setNewHeight] = useState(parentRef.current.scrollHeight)
 
     const openModalWindow = () => {
       setOpenModal((prevstate) => (prevstate = !openModal));
     };
-
-    //   const getQuantityProducts = (id) => {
-    //     if (user.cases) {
-    //       return user.cases[backpackId - 1].products.filter(
-    //         (prod) => prod.categoryId === id
-    //       ).length;
-    //     }
-    //   };
-    //   const getAddedProducts = (id) => {
-    //     if (user.cases) {
-    //       return user.cases[backpackId - 1].products
-    //         .filter((prod) => prod.categoryId === id)
-    //         .filter((p) => p.isAdded).length;
-    //     }
-    //   };
-    //   const filterProducts = user.cases[backpackId - 1].products;
+    // useEffect(() => {
+    //   // console.log(parentRef.current.scrollHeight)
+    //   if(parentRef.current) {
+    //     // console.log(parentRef.current.scrollHeight)
+    //   }
+    // },[newHeight])
 
     const checkProduct = (id) => {
       if (user.cases) {

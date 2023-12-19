@@ -53,6 +53,10 @@ a:hover {
  background-color: azure;
 }
 
+.main {
+  padding: 25px;
+}
+
 .create__button {
   padding: 24px;
   background: var(--80, rgba(0, 0, 0, 0.80));

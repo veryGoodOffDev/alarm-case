@@ -28,14 +28,16 @@ export const ProductItem = observer(
     // console.log(newDate)
     // const dateFirst = new Date(newDate)
     const dateSecond = new Date(newDate)
-    const timeDiff = Math.abs(dateSecond.getTime() - Date.now());
-    const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
-    // console.log(diffDays)
+    const timeDiff = dateSecond.getTime() - Date.now();
+
+    const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    console.log(diffDays, dateSecond.getTime(), Date.now())
+    console.log(Math.ceil(-1,835582662037037), 'округление')
 
     const changeClass =() => {
-      if(diffDays <= 30) {
+      if(diffDays <= 90 && diffDays >= 7) {
         return "product__expiration danger"
-      } else if(diffDays <= 0) {
+      } else if(diffDays <= 7) {
         return "product__expiration error"
       }
     }

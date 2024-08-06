@@ -6,7 +6,7 @@ Alarm Case - это приложение на React, которое помога
 
 ## Скриншоты
 ![screen 1](https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20120338.jpg)
-<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20120338.jpg" width="100"/>
+<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20120338.jpg" width="300"/>
 
 
 ## Функционал

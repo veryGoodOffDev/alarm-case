@@ -6,8 +6,8 @@ Alarm Case - это приложение на React, которое помога
 
 ## Скриншоты
 <img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20120338.jpg" width="300"/><img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20115925.jpg" width="300"/>
-<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20115403.jpg" width="300"/>
-<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20115334.jpg" width="300"/>
+<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20115403.jpg" width="350"/>
+<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20115334.jpg" width="350"/>
 <img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%201153345.jpg" width="300"/>
 <img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-08-06%201313556.jpg" width="300"/>
 

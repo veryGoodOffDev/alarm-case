@@ -5,8 +5,10 @@
 Alarm Case - это приложение на React, которое помогает пользователям управлять своим рюкзаком. С его помощью вы можете создавать и выбирать темы рюкзака, наполнять его продуктами по категориям и отслеживать срок годности. Получайте уведомления о том, что продукты вышли из срока годности. 
 
 ## Скриншоты
-![screen 1](https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20120338.jpg)
-<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20120338.jpg" width="300"/>
+<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20120338.jpg" width="400"/>
+<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20115925.jpg" width="400"/>
+<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20120338.jpg" width="400"/>
+<img src="https://github.com/veryGoodOffDev/alarm-case/blob/master/screenshots/Снимок%20экрана%202024-07-22%20120338.jpg" width="400"/>
 
 
 ## Функционал
